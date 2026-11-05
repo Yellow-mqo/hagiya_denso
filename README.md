@@ -1,3 +1,3 @@
-- 萩谷電装まとめページ
+- 萩谷電装ウェブサイト
 
-[→サイト←](https://yellow-mqo.github.io/yellow_electric/)
+[→サイト←](https://yellow-mqo.github.io/hagiya_denso/)
