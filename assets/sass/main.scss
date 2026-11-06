@@ -686,6 +686,70 @@
 		}
 	}
 
+	.box.page-card {
+		display: grid;
+		grid-template-columns: 25% minmax(0, 1fr) auto;
+		align-items: center;
+		gap: clamp(0.75rem, 2.5vw, 1.75rem);
+		min-height: clamp(8rem, 12vw, 11rem);
+		margin-bottom: 0;
+		padding: 0;
+		overflow: hidden;
+		border-bottom: 0;
+		color: inherit;
+	}
+
+	.box.page-card + .page-card {
+		margin-top: 0.75em;
+	}
+
+	.page-card-image {
+		position: relative;
+		align-self: stretch;
+	}
+
+	.page-card-image img {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.page-card-image-profile {
+		background: #fff4d8;
+	}
+
+	.page-card-image-profile img {
+		padding: 0.5em;
+		object-fit: contain;
+	}
+
+	.page-card > div {
+		padding: 1em 0;
+	}
+
+	.page-card > .icon {
+		margin-right: clamp(0.75rem, 2.5vw, 1.75rem);
+	}
+
+	.box.page-card h2 {
+		margin: 0 0 0.2em;
+	}
+
+	.box.page-card p {
+		margin: 0;
+	}
+
+	.box.page-card:hover {
+		background-color: #fff8ed;
+	}
+
+	.box.page-card:focus-visible {
+		outline: 2px solid #595959;
+		outline-offset: -2px;
+	}
+
 /* Icon */
 
 	.icon {
@@ -2065,6 +2129,10 @@
 						}
 					}
 				}
+			}
+
+			.box.page-card {
+				padding: 0 !important;
 			}
 
 		/* Banner */
